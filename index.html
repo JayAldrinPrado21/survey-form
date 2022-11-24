@@ -1,0 +1,75 @@
+<!Doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet"> 
+    <link href="styles.css" rel="stylesheet">
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</head>
+<body>
+    <main id="main">
+
+        <header>
+            <h1 id="title"><strong>Survey Form</strong></h1>
+            <p id="description">Please Answer the survey Below. Thank You!</p>
+        </header>
+
+        <form id="survey-form" action="#">
+            
+            <label for="name" id="name-label" class="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Juan Dela Cruz" required>
+
+            <label for="email" id="email-label" class="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="codecamp@gmail.com" required>
+
+            <label for="number"id="number-label" class="number">Age <em>(optional)</em></label>
+            <input type="number" id="number" name="number" placeholder="18" required min="10" max="99">
+
+            <label for="dropdown" class="dropdown">What do you know about codecamp ?</label>
+            <select id="dropdown" name="dropdown"> 
+                <option value="unware">Completely Unware</option>
+                <option value="notMuch">Not very much</option>
+                <option value="quite">I know quite a bit</option>
+                <option value="wellVersed">I am well-versed</option>
+            </select>
+
+            <fieldset>
+                <legend> What is your favourite feature in codecamp ?</legend>
+                <input id="one" type="radio" name="favourite" value="one">
+                <label for="one">Challenges</label><br/>
+                <input id="two" type="radio" name="favourite" value="two">
+                <label for="two">Lessons</label><br/>
+                <input id="three" type="radio" name="favourite" value="three">
+                <label for="three">The Certifications</label><br/>
+                <input id="four" type="radio" name="favourite" value="four">
+                <label for="four">Web design</label><br/>
+                <input id="five" type="radio"  name="favourite" value="five">
+                <label for="five">User interface</label><br/>
+                <input id="six" type="radio" name="favourite" value="six">
+                <label for="six">Duration of Activity</label><br/>
+                <input id="seven" type="radio" name="favourite" value="seven">
+                <label for="seven">Simplicity</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>What would you like us to improve ?</legend>
+                <input id="front-end" type="checkbox" name="improve" value="Front-end">
+                <label for="front-end">Front End Projects</label><br/>
+                <input id="challenges" type="checkbox" name="improve" value="Challenges">
+                <label for="challenges">Challenges</label><br/>
+                <input id="forum" type="checkbox" name="improve" value="Forum">
+                <label for="forum">Forum</span></label><br/>
+                <input id="back-end" type="checkbox" name="improve" value="Back-end">
+                <label for="back-end">Back End Projects</label><br/>
+            </fieldset>
+
+            <label for="comment" class="textarea">Thanks for your time and how was our survey ?</label>
+            <textarea id="comment" name="comment" rows=7 placeholder="Enter your comments here"></textarea>
+        
+            <input type="submit" id="submit" value="Submit">
+        </form>
+    </main>
+</body>
+</html>
